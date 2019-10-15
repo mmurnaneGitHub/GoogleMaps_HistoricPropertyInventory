@@ -1,0 +1,175 @@
+body {
+background-color:#898989;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+color:#424242;
+margin:0px;
+padding:0px;
+}
+
+.h-dash      { background-image: 
+               url('../images/hor-dash.gif'); 
+               background-repeat: repeat-x }
+.v-dash      { background-image: 
+               url('../images/vert-dash.gif'); 
+               background-repeat: repeat-y }
+#secTitle h1 {
+display:inline;
+margin:0px;
+padding:0px 0px 0px 18px;
+font-size:15px;
+}
+
+.arts{
+color:#2FACD7;
+}
+
+.historic{
+color:#446bae;
+}
+
+.international{
+color:#4b88e0;
+}
+
+#secTitle h2 {
+display:inline;
+margin:0px;
+padding:0px 0px 0px 14px;
+color:#7d7d7d;
+font-size:14px;
+}
+
+#globalNav {
+font-size:1px;
+}
+
+#content {
+margin: 0px 0px 0px 0px;
+font-size:11px;
+}
+
+
+#main {
+color:#424242;
+padding: 16px 0px 0px 20px;
+}
+
+#main h3 {
+margin:0px;
+font-weight:bold;
+padding:13px 0px 13px 0px;
+font-size:11px;
+color:#424242;
+}
+
+#main b{
+font-weight:bold;
+color:#7d7d7d;
+}
+
+#main p {
+margin: 0px;
+padding:0px 0px 13px 0px;
+}
+
+#main a {
+color:#0066CC;
+text-decoration:none;
+}
+
+#main a:hover {
+color:#0066CC;
+text-decoration:underline;
+}
+
+#main ul{
+margin:0px;
+padding:0px 0px 5px 20px;
+}
+
+#main ul ul{
+padding-top:5px;
+}
+
+#main ol{
+margin:0px;
+padding:0px 0px 5px 20px;
+}
+
+#main li{
+padding-bottom:5px;
+}
+
+#sectionNav {
+margin:0px;
+font-size:10px;
+font-weight:bold;
+padding: 16px 0px 20px 10px;
+}
+
+#sectionNav a{
+text-decoration:none;
+color:#7D7D7D;
+}
+
+#sectionNav a:hover{
+text-decoration:none;
+color:#424242;
+}
+
+#sectionNav ul {
+margin:0px;
+padding:0px;
+list-style-type:none;
+}
+
+#sectionNav li {
+margin:0px;
+padding:0px 0px 6px 0px;
+}
+
+#pageNav {
+margin:0px;
+font-size:10px;
+padding: 16px 0px 20px 6px;
+}
+
+#pageNav a{
+text-decoration:none;
+color:#7D7D7D;
+}
+
+#pageNav a:hover{
+text-decoration:none;
+color:#424242;
+}
+
+#pageNav ul {
+margin:0px;
+padding:0px;
+list-style-type:none;
+}
+
+#pageNav li {
+padding-bottom:7px;
+}
+
+.toplink {
+font-size:9px;
+padding:0px 0px 10px 6px;
+}
+
+.toplink a{
+text-decoration:none;
+color:#424242;
+}
+
+#footer {
+font-size:9px;
+}
+
+#footer a{
+text-decoration:none;
+color:#424242;
+}

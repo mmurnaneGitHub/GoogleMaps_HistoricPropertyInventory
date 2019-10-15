@@ -1,0 +1,99 @@
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<html>
+<head>
+ <title>Select by Circle</title>
+ <link href="css/master.css" rel="stylesheet">
+ <style>
+  body {overflow:auto}
+ </style>
+
+<SCRIPT TYPE="text/javascript" LANGUAGE="JavaScript">
+	var t = parent.MapFrame
+
+	function doBuffer() {
+		var f = document.forms[0];
+		t.bufferDistance = f.radiusDist.value;
+	}
+
+	function toggleDrawCircle() {
+		var f = document.forms[0];
+		if (f.drawCircle.checked) t.drawCircle = true;
+		else t.drawCircle = false;
+	}
+
+	function sendQuery() {
+		doBuffer();
+		toggleDrawCircle();
+    t.findAddress(document.forms[1].idField[0].value);
+	}
+
+ </SCRIPT>
+
+</head>
+
+<BODY  onload="doBuffer();toggleDrawCircle();window.focus();">
+
+<div id="nonFooter">
+
+ <center>
+
+ <table cellspacing="2" nowrap id="content" width="100%">
+	<tr>
+		<td align="center"><b>SELECT INVENTORIES BY MAP LOCATION</b></td>
+	</tr>
+ </table>
+
+<table nowrap id="content" bgcolor="#2FACD7" width="100%" border="0" cellpadding="6" cellspacing="2" >
+ <form name="setRadius">
+  <tr>
+   <td align="center"><b>Distance</b> (miles):
+			<select name="radiusDist" onchange="doBuffer();"style="font-size: 8pt;background-color: #FFFFCC; width: 75px;">
+				<option selected value="0.05"> 0.05
+				<option value="0.1"> 0.1
+				<option value="0.25"> 0.25
+				<option value="0.5"> 0.5
+				<option value="0.75"> 0.75
+				<option value="1"> 1
+				<option value="1.5"> 1.5
+				<option value="2"> 2
+				<option value="2.5"> 2.5
+				<option value="3"> 3
+				<option value="4"> 4
+				<option value="5"> 5
+			</select>
+	<br><br><input type="checkbox" name="drawCircle" CHECKED onClick="toggleDrawCircle();"> Draw selection circle
+	<br><br>Click map or Select button to find inventories.
+   </td>
+  </tr>
+
+ </form>
+</table>
+
+<br>
+
+<table nowrap id="content" bgcolor="#446BAE" width="100%" border="0" cellpadding="6" cellspacing="2" >
+ <form name="FindAddress" onsubmit="sendQuery(); return false;">
+
+    <tr>
+      <td align="center">
+	<b>Address:</b>
+	<input TYPE="TEXT" NAME="idField" VALUE="747 Market St" SIZE="15" style="font-size: 8pt;background-color: #FFFFCC; width: 100px;">
+	<input type="hidden" name="idField" value="">
+	<br><br><input type="submit" name="theButton1" value="Select" style="font-size: 8pt">
+      </td>
+    </tr>
+
+ </form>
+</table>
+
+<br>
+
+ </center>
+
+ <p>&nbsp;<p>
+</div>
+
+
+</body>
+</html>

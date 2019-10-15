@@ -1,0 +1,8 @@
+Minify Notes:
+
+1. Use Chrome
+2. Use dojo ShrinkSafe: http://shrinksafe.dojotoolkit.org/
+3. Select "strip newline chars?"
+4. Combine all files (1)
+
+For other  files: http://www.willpeavy.com/minifier/

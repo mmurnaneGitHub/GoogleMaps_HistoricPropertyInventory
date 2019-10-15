@@ -1,0 +1,14 @@
+  html, body { 
+    width: 100%; 
+    height: 100%; 
+    margin: 0px; 
+    padding:0px;
+    margin-top: 0px; 
+    font-family:helvetica,Verdana,arial,sans-serif; 
+    font-size:90%;
+  } 
+  #gmap {
+    width: 100%; 
+    height: 100%;
+  }
+
